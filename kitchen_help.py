@@ -7,6 +7,7 @@ print("How many oz do you need?")
 oz = input()
 oz = int(oz)
 
-amount_in_grams = int(oz*28.3495)
+grams = (oz*28.3495)
+grams = round(grams, 2)
 
-print(f"You will need {amount_in_grams}grams of {ingredient}")
+print(f"You will need {grams}grams of {ingredient}")
