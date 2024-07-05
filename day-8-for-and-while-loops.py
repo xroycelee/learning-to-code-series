@@ -69,7 +69,7 @@ i = 0
 
 while num != 10:
     i += 1
-    num = randint(1,11)
+    num = randint(1,10)
     print(f"The number is {num}")
 print(f"It took {i} tries to get to the number 10")
 
