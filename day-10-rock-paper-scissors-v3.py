@@ -27,8 +27,10 @@ while round_num < rounds:
 
     print(f"Robot picked {robot}")
 
+    state = "invalid"
+
     if player == robot:
-        print("Draw")
+        state = "draw"
     elif player == "rock":
         if robot == "scissors":
             state = "player wins"
@@ -55,6 +57,10 @@ while round_num < rounds:
     elif state == "robot wins":
         print("Robot wins!")
         robot_score += 1
+    elif state == "draw":
+        print("It's a draw")
+    else:
+        print("That's an invalid choice, you wasted 1 round!")
 
 print(f"The final score is... Player score: {player_score}, Robot score: {robot_score}")
 
