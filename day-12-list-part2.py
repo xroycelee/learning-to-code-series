@@ -3,7 +3,7 @@ num = list(range(10))
 print(len(num)) # indicates how many items are in the list
 
 # index function
-print(num.index(1)) # to find the index of the mentioned item within the list starting from 2nd index onwards
+print(num.index(1, 2)) # to find the index of the mentioned item - '1' within the list starting from 2nd index onwards
 
 # count function
 print(num.count(2)) #to find out how many instances the item appears in the list
