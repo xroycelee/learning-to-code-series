@@ -31,7 +31,16 @@ shopping_list = {
 }
 
 print(f"{item} is here!")
+
+# using IN function
 if item in shopping_list:
     print(f"I need {shopping_list[item]} {item}")
+else:
+    print("I do not need this")
+
+# using .get()
+quantity = shopping_list.get(item)
+if quantity:
+    print(f"I need {quantity} {item}")
 else:
     print("I do not need this")
